@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        #mcanvas {
+            border: 1px solid black;
+        }
+</style>
+
+<script>
+    window.onload = function() {
+
+        var canvas = document.getElementById('mcanvas');
+        var ctext = canvas.getContext('2d');
+        var ctrX = canvas.width / 2;
+        var ctrY = canvas.height / 2;
+        var radius = 75;
+        ctext.beginPath();
+        // var startAngle = 1.1 * Math.PI;
+        // var endAngle = 1.9 * Math.PI;
+        // var ctrClockwise = false;
+        ctext.arc(ctrX, ctrY, radius, 0, 2 * Math.PI, false);
+        ctext.fillStyle = 'DarkOrchid'
+        ctext.fill();
+        ctext.lineWidth = 4;
+        // line color
+        ctext.strokeStyle = "Black";
+        ctext.stroke();
+    };
+</script>
+</head>
+<body>
+    <canvas id="mcanvas" width="278" height="250"></canvas>
+</body>
+</html>
