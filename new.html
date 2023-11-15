@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+<script>
+    function employee_info(name, age, experience, address, gender, designation)
+    {
+     this.name = name
+     this.age = age   
+     this.experience = experience
+     this.address = address
+     this.gender = gender
+     this.designation = designation 
+}
+
+empMary = new employee_info ('Mary', '34', '5 years', 'Jabi', 'Female', 'Clerk');
+alert ("Name: "+empMary.name+ '\n' + "Age: " + empMary.age+ '\n' + "Experience: "+ empMary.experience+ '\n' +
+"Address: " +empMary.address+ '\n' + "Gender: " +empMary.gender+ '\n' + "Designation: " +empMary.designation+ ".");
+// `Name: ${empMary.name} Age: ${empMary.age}`
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
