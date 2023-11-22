@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        #mcanvas {
+            border: 1px solid green;
+        }
+         body {
+            margin: 0px;
+            padding: 0px;
+         }
+    </style>
+    <script>
+        window.onload = function ()
+        {
+            var canvas = document.getElementById('mcanvas');
+            var ctext = canvas.getContext('2d');
+            ctext.beginPath();
+            ctext.rect(30,50,150,100);
+            ctext.fillStyle = "Magenta";
+            ctext.fill();
+            ctext.lineWidth = 5;
+            ctext.strokeStyle = 'black';
+            ctext.stroke();
+        };
+    </script>
+</head>
+<body>
+   <canvas id="mcanvas" width="'278" height="200"></canvas> 
+</body>
+</html>
