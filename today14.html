@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <script>
+        function drag_image(event) {
+            event.dataTransfer.setData ("image", event.target.id);
+        }
+        function allow_drop(event) {
+            event.preventDefault();
+        }
+        function drop_image(event) {
+            var data = event.dataTransfer.getData("image");
+            event.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+    <div id="div1" style="border: blue 2px solid; height: 125px; width: 75px; padding: 10px;" >
+    <img src="img/tokyo-01-zojo-ji.jpeg" height="75" width="75" id="image1" draggable="true" ondragstart="drag_image(event)" alt=""/>
+    </div>
+    <br>
+    <div id="div2" style="border: red 2px solid; height: 125px; width: 75px; padding: 10px;" ondrop="drop_image(event)" ondragover="allow_drop(event)"></div>
+</body>
+</html>
