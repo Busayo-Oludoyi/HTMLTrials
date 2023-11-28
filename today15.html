@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular jS</title>
+    <Script src="angular-1.7.9/angular.min.js"></Script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        Firstname: <input type="text" ng-model="firstName"><br>
+        Lastname: <input type="text" ng-model="lastName"><br>
+        <br>
+        Full Name {{firstName+ ' ' +lastName}}
+
+    
+        <!-- <p> Name: <input type="text" ng-model="name" ng-init="firstname='Oluwabusayo'"></p>
+        <p ng-bind="name"></p>
+        <p>My firstname is <span ng-bind="firstname"></span></p>
+        <p>My first Expression: {{5*20}} </p> -->
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope){
+            $scope.firstName="Busayo";
+            $scope.lastName="Oludoyi";
+        })
+
+    </script>
+</body>
+</html>
