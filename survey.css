@@ -1,0 +1,72 @@
+body{
+    background-color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+h1{
+    text-align: center;
+    margin: 40px auto;
+}
+
+main{
+    background-color: white;
+    border: 0px solid black;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px
+}
+select{
+    width: 400px;
+}
+footer{
+    position: absolute;
+    font-size: small;
+   width: 100%;
+   text-align: center;
+}
+button{
+    border: 0;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    background: green;
+    position:relative;
+    width: 100%;
+    border-radius: 10px;
+}
+button:hover{
+    background: black;
+    color: green;
+}
+.control select, textarea{
+    width: 95%;
+}
+input[type="text"]{
+    width: 95%;
+}
+input[type=email]{
+    width: 95%;
+}
+input[type=number]{
+    width: 95%;
+}
+footer{
+    font-size: 13px;
+}
+fieldset{
+    border-radius: 10px;
+}
+input[type=reset]{
+    border: 0;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: black;
+    background: green;
+    position:relative;
+    width: 20%;
+    border-radius: 10px;
+
+}
